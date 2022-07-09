@@ -17,7 +17,7 @@ namespace StockInvesting.Hubs
 
             string url = $"https://api.polygon.io/v2/aggs/ticker/" +
                 $"{message.ToUpper()}/range/1/day/{date.ToString("yyyy-MM-dd")}/" +
-                $"{date.AddDays(10).ToString("yyyy-MM-dd")}?apiKey=IIrxKiZhCrJaV0LKZpUVYatFWopiLbxO";
+                $"{date.AddDays(14).ToString("yyyy-MM-dd")}?apiKey=IIrxKiZhCrJaV0LKZpUVYatFWopiLbxO";
 
             var client = new RestClient(url);
             var request = new RestRequest();
