@@ -4,6 +4,6 @@ namespace WordFinder
 {
     public interface IWordHubClient
     {
-        Task PlayerTakenMessage(string player);
+        Task NumPlayersCount(int count, string username);
     }
 }

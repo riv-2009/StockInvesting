@@ -7,10 +7,11 @@ namespace WordFinder.Hubs
 {
     public class WordHub: Hub<IWordHubClient>
     {
-        public async Task PlayerTaken(string player)
+        public static int count = 0;
+        public async Task NumPlayers(string username)
         {
-            player = "hello from signalr";
-            await Clients.All.PlayerTakenMessage(player);
+            count++;
+            await Clients.All.NumPlayersCount(count, username);
         }
     }
 }
