@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WordFinder.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20220804010613_initial")]
-    partial class initial
+    [Migration("20220809002828_initialcreate")]
+    partial class initialcreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
